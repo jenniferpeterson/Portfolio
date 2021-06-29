@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Peterson</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav id="mainNav" class="navbar-fixed navbar fixed-top border-bottom navbar-expand-lg navbar-light bg-light">
+        <!-- <span class="navbar-brand h1" href="#">Jennifer Peterson</span> -->
+        <a class="navbar-brand h1 font-weight-bold" href="#">Jennifer Peterson</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+    <div class="container-fluid main">
+
+        <div class="section1">
+            <div class="container">
+                <div class="row justify-content-center">
+
+
+
+                    <div id="welcome" class="col-lg-5 col-md-7 col-sm-8">
+                        <img class="img-thumbnail w-25" src="images/jenniferp.jpg">
+                        <h1>Jennifer Peterson</h1>
+                        <h4>Full Stack Web Developer</h4>
+                        <hr />
+                        <a href="#portfolio">Portfolio</a> |
+                        <a href="#work">Work Experience</a> |
+                        <a href="#education">Education</a> |
+                        <a href="#about">About</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Modal -->
+        <div id="imageModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalImage" class="rounded mx-auto w-100" src="images/maxresdefault.jpg">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="portfolio" class="section2 section">
+
+            <div class="container-fluid portfolio">
+                <div class="row justify-content-center ">
+
+                    <h2 style="text-transform: uppercase;" class="col-12 p-5">Portfolio</h2>
+
+                </div>
+
+            </div>
+            <div class="container-fluid projects">
+
+
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 proj1 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Kiwi II Construction</h5>
+                                <p class="card-text text-left">
+                                    Created a web interface to streamline the workflow that was previously done in MS
+                                    Excel. I will not be able to show project visuals as this is proprietary
+                                    information.
+                                </p>
+                                <ul class="text-left">
+                                    <li>Multi-user system</li>
+                                    <li>Parts library (update, delete, create)</li>
+                                    <li>Created printer friendly pages to send to their clients</li>
+
+                                </ul>
+                                <hr />
+                                Tech used: ReactJS, Bootstrap
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-4 proj2 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Inventory App</h5>
+                                <p class="card-text text-left">
+                                    Created a multi-user web app to keep track of one's belongings and household
+                                    inventory.
+                                </p>
+
+                                <img data-toggle="modal" data-target="#imageModal"
+                                    onclick="imageModal('images/maxresdefault.jpg', 'Inventory App')"
+                                    src="images/maxresdefault.jpg" class="rounded mx-auto w-75 mb-3">
+                                <br>
+                                <a target="blank" href="https://github.com/jenniferpeterson/inventory">Github Link</a>
+                                <a target="blank" href="https://inventory-jpeterson.herokuapp.com/">Live Demo</a>
+                                <hr />
+                                Tech used: Django, Python, JavaScript, HTML5, CSS, Bootstrap, Postgres
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 proj3 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Auctions App</h5>
+                                <p class="card-text text-left">
+                                    Created a commerce auction website that allows users to post auction listings, place
+                                    bids, comment on listings, and add listings to a watchlist.
+                                </p>
+                                <img data-toggle="modal" data-target="#imageModal"
+                                    onclick="imageModal('images/auctions_thumbnail.PNG', 'Web Auctions App')"
+                                    src="images/auctions_thumbnail.PNG" class="rounded mx-auto w-75 mb-3">
+                                <br>
+                                <a target="blank" href="https://github.com/jenniferpeterson/commerce">Github Link</a>
+                                <a target="blank" href="https://commerce-jpeterson.herokuapp.com/">Live Demo</a>
+                                <hr />
+                                Tech used: Django, Python, JavaScript, HTML5, CSS, Bootstrap, Postgres
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="work" class="section3_work section p-5">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <h2 style="text-transform: uppercase;" class="col-12 p-5">Work Experience</h2>
+                    
+                    <div class="col-lg-8 m-4">
+                        <div class="card">
+                            <div class="card-header text-left">
+                                <h5 class="card-title ">Web Developer Contractor</h5>
+                                <h5 style="font-size: 1rem;" class="card-subtitle ">Kiwi II Construction</h5>
+                                <p class="card-subtitle  float-right">Aug 2020 - Present</p>
+                            </div>
+                            <div class="card-body text-left">
+                                <ul>
+                                    <li>Created a web application to streamline current workflow</li>
+                                    <li>Provide ongoing support for the web application</li>
+                                    <li>Manage incoming software enhancement requests</li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 m-4">
+                        <div class="card">
+                            <div class="card-header text-left">
+                                <h5 class="card-title">Consultant</h5>
+                                <h5 style="font-size: 1rem;" class="card-subtitle">Bric TPS LLC</h5>
+                                <p class="card-subtitle  float-right">Jun 2019 - Present</p>
+                            </div>
+                            <div class="card-body text-left">
+                                <ul>
+                                    <li>Created web interface for testing toll transactions </li>
+                                    <li>Create HTML email templates for toll processing system</li>
+                                    <li>Provide testing for internal letter system</li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header text-left">
+                                <h5 class="card-title ">IT Support</h5>
+                                <h5 style="font-size: 1rem;" class="card-subtitle ">Neudesic</h5>
+                                <p class="card-subtitle  float-right">Aug 2017 - Sep 2018</p>
+                            </div>
+                            <div class="card-body text-left">
+                                <ul>
+                                   <li>Provided technical support to internal software applications 
+                                </li>
+                                <li>Monitored and resolved software/hardware issues
+                                </li>
+                                <li>Onboarded new employees - hardware setup,  explained internal applications </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section4_skills pt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h2 class="p-5" style="text-transform: uppercase;">Skills</h2>
+
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <div class="skills-client rounded">Client-Side<br><i class="fas fa-laptop"></i></div>
+
+                        <div class="skills-client-img container">
+                            <div class="row justify-content-center">
+                                <div class="col-4">
+                                    <img style="width: 75px !important;" class="rounded mx-auto w-100 m-3"
+                                        src="images/skills/react.png">
+                                    <br>
+                                    React
+                                </div>
+                                <div class="col-4"><img style="width: 50px !important;" class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/javascript.png"><br>
+                                    JavaScript</div>
+                                <div class="col-4"><img style="width: 50px !important;" class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/jquery.jpg"><br>
+                                    jQuery</div>
+                            </div>
+                            <div class="row justify-content-center pb-3">
+                                <div class="col-4"><img style="width: 50px !important;" class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/html.png"><br>
+                                    HTML5</div>
+                                <div class="col-4"><img style="width: 50px !important;" class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/css.png">
+                                    <br>
+                                    CSS3
+                                </div>
+                                <div class="col-4"><img style="width: 50px !important;" class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/bootstrap.png">
+                                    <br>
+                                    Bootstrap
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="skills-server rounded">Server-Side <br><i class="fas fa-server"></i></div>
+
+                        <div class="skills-server-img container">
+                            <div class="row justify-content-center">
+                                <div class="col-4"><img style="width: 50px !important;"
+                                        class="rounded mx-auto w-100 m-3" src="images/skills/python-logo.png">
+                                    <br>
+                                    Python
+                                </div>
+                                <div class="col-4"><img class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/django-logo-negative.png"><br>
+                                    django</div>
+
+                                <div class="col-4"><img style="width: 50px !important;" class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/node.png">
+                                    <br>
+                                    Node.js
+                                </div>
+
+                            </div>
+                            <div class="row justify-content-center ">
+                                <div class="col-4"><img style="width: 50px !important;" class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/git.png"> <br>
+                                    Git</div>
+                                <div class="col-4"><img style="width: 50px !important;" class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/postgres.png"> <br>
+                                    PostgreSQL</div>
+                                <div class="col-4"><img style="width: 75px !important;"
+                                        class="rounded mx-auto w-100 m-3" src="images/skills/mysql.png"> <br>
+                                    MySQL</div>
+
+                            </div>
+                            <div class="row justify-content-center pb-3">
+                                <div class="col-4"><img style="width: 50px !important;" class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/docker.png"> <br>
+                                    Docker</div>
+                                <div class="col-4"><img style="width: 50px !important;" class="rounded mx-auto w-75 m-3"
+                                        src="images/skills/MongoDB.jpg"> <br>
+                                    MongoDB</div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="education" class="section5_education section p-5 mb-5">
+            <div class="container ">
+                <div class="row justify-content-center">
+                    <h2 style="text-transform: uppercase;" class="col-12 p-5">Education</h2>
+                    <div class="col-lg-4">
+                        <div class="card cal_poly p-3">
+                            <img style="width: 200px; margin: 0 auto;" class="card-img-top "
+                                src="images/1200px-Cal_Poly_Seal.svg.png" alt="Cal Poly Pomona seal">
+                            <div class="card-body">
+                                <h5 class="card-title">Cal Poly Pomona</h5>
+                                <p class="card-text">Bachelor of Science <br>Computer Information Systems <br>2017</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-3">
+                            <img style="width: 200px; margin: 0 auto;" class="card-img-top "
+                                src="images/tbtgb5ek_400x400.jpg" alt="HarvardX logo">
+                            <div class="card-body">
+                                <h5 class="card-title">HarvardX</h5>
+                                <p class="card-text"><a target="blank"
+                                        href="https://courses.edx.org/certificates/f88dca46872043ff9e460bf772b855b8">Verified
+                                        Certificate</a> <br>CS50 Web Programming with Python and JavaScript <br>2021</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="about" class="section_about section p-5 m-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h2 class="p-5" style="text-transform: uppercase;">About Me</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-lg-8 pb-5 mb-5">
+                        <p>Hello, my name is Jennifer Peterson and I am a full stack web developer. I graduated from Cal
+                            Poly Pomona with a degree in Computer Information Systems. </p>
+                        <p>I am passionate about learning and I am always looking for opportunities to better myself
+                            personally or professionally. My philosophy is to look for the joy in what you do and the
+                            positive
+                            difference it can make in someone's life.
+                            It is my goal to build applications that provide support for people and make an impact. </p>
+                        <p>When I am not creating websites, I like hanging out with my dog, reading, dancing, and taking
+                            courses on any subject that interests me.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section6_contact">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6 p-5 text-center">
+                        <h5>Jennifer Peterson | Full Stack Web Developer</h5>
+                    </div>
+                    <div class="col-md-6 p-5 text-center">
+                        <a target="blank" href="https://www.linkedin.com/in/jenny-peterson/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a target="blank" href="https://github.com/jenniferpeterson"><i class="fab fa-github"></i></a>
+
+                        <a href="mailto: jen@jenniferpeterson.dev"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

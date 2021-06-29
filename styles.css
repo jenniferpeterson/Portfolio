@@ -1,0 +1,177 @@
+a {
+  margin: 5px;
+}
+
+nav {
+  background-color: #383434;
+}
+
+h1,
+h2,
+h3,
+h4,
+a, nav {
+  font-family: "Open Sans", sans-serif;
+}
+
+.current {
+  color: #b163f7 !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#mainNav {
+  transition: opacity 0.5s;
+}
+
+.navbar-fixed {
+  opacity: 0;
+}
+
+.navbar-trans {
+  opacity: 1;
+}
+
+#welcome {
+  /* background-color: white; */
+  background-color: black;
+  color: #495464;
+  border-radius: 25px;
+  border: 1px solid #bbbfca;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#welcome h1, #welcome h4, #welcome a {
+  color: white;
+}
+
+#welcome a:hover {
+  color: #b163f7;
+}
+
+.cal_poly {
+  margin: 0 auto;
+}
+
+.card-body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main {
+  padding: 0 !important;
+}
+
+.portfolio h2 {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.projects {
+  background-image: linear-gradient(#000 50%, #fff 0%);
+}
+
+.section1 {
+  height: 100vh;
+  background-image: url("images/jeremy-thomas-E0AHdsENmDg-unsplash.jpg");
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
+  margin: 0 auto;
+}
+
+.section2 {
+  text-align: center;
+}
+
+.section2 img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.section2 img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.section3_work {
+  text-align: center;
+  padding: 20px;
+}
+
+.section4_skills {
+  background-color: #f7f7f7;
+}
+
+.section5_education {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+}
+
+.section_about {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section6_contact {
+  background-color: #383434;
+  color: white;
+  /* height: 100px; */
+  font-family: "Open Sans", sans-serif;
+}
+
+.section6_contact a {
+  color: white;
+}
+
+.section6_contact i {
+  font-size: 20px;
+  margin: 0 2px 0 2px;
+}
+
+.section6_contact i.fa-linkedin:hover {
+  color: #0077b5;
+  cursor: pointer;
+}
+
+.section6_contact i.fa-github:hover {
+  color: #6e5494;
+  cursor: pointer;
+}
+
+.section6_contact i.fa-envelope:hover {
+  color: #f1d592;
+  cursor: pointer;
+}
+
+.skills-client {
+  background-color: #6dd47e;
+  color: #293250;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.skills-server {
+  background-color: #293250;
+  color: #6dd47e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.skills-client-img {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.skills-server-img {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
